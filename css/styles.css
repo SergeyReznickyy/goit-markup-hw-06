@@ -462,7 +462,83 @@ img {
 .footer-social-link:focus {
   background-color: #31d0aa;
 }
+
+.form-subscribe {
+  margin-left: auto;
+}
+
+.text-subscribe {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.group-subscribe {
+  display: flex;
+  gap: 16px;
+}
+
+.form {
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  -webkit-text-fill-color: #ffffff;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  padding: 8px 212px 8px 16px;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.form:focus,
+.form:hover {
+  border-color: #4d5ae5;
+}
+
+.submit-button {
+  width: 165px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  cursor: pointer;
+  margin: 0 auto;
+
+  border: none;
+  background-color: var(--brand-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-icon {
+  fill: #ffffff;
+  margin-left: 16px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--active-color);
+}
+
 /* __________PORTFOLIO ST#2_____________ */
+
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -601,7 +677,7 @@ img {
 
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -657,7 +733,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 48px;
+
   margin-bottom: 16px;
 }
 
@@ -674,17 +750,27 @@ img {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding-left: 16px;
+  padding-left: 32px;
 
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+  border-color: #4d5ae5;
+  padding-left: 38px;
+}
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
 }
 
 .modal-icon {
   position: absolute;
-  left: 8px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -697,4 +783,79 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+  padding: 8px 16px;
+  outline: transparent;
+  margin-bottom: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment:focus {
+  border-color: #4d5ae5;
+}
+.modal-field-check {
+  margin-bottom: 24px;
+}
+.check-text {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.model-check:checked + .check-text span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.modal-button {
+  min-width: 169px;
+  height: 56px;
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  cursor: pointer;
+  margin: 0 auto;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border: none;
+  background-color: var(--brand-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--active-color);
+  cursor: pointer;
 }
